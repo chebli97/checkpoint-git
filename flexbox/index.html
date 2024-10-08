@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+  <!-- <div class="navigation-container">
+      <nav>
+          <h1>TM</h1>
+          <button>PRE-ORDER NOW</button>
+      </nav>
+  </div>
+  <div class="main-description">
+      <div class="description">
+        <h1>TYPEMASTER <br> KEYBOARD</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa, quod optio laudantium eaque architecto placeat deserunt laboriosam magni exercitationem beatae at nobis dignissimos numquam autem iure. Temporibus, facilis architecto.</p>
+        <div class="buttons">
+          <button id="btn-one">PRE-ORDER NOW</button>
+          <button>RELEASE ON 5/27</button>
+
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="./clavier.jpg" alt="">
+      </div>
+  </div>
+  <div class="about-us">
+    <div class="about-images">
+      <img src="./clavier1.jpg" width="300" alt="">
+      <img src="./clavier2.jpg" width="450" style="padding-left:20px ;" alt="">
+    </div>
+    <div class="about-text">
+        <h2>Mechanical <br> Wireless <br> Keyboard</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis beatae aut soluta optio error quis similique tenetur ipsam, dolor reprehenderit eum suscipit blanditiis iste minima iure molestias ducimus voluptatibus possimus!</p>
+    </div>
+  </div> -->
+  <div class="d-flex h-100">
+		<p>try pressing some keys:</p>
+		<p id="log"></p>
+	</div>
+	<script>
+		document.addEventListener('keydown', logKey);
+    	function logKey(event) {
+      	log.textContent += " " + event.code;
+    	}
+	</script>
+
+</body>
+</html>
